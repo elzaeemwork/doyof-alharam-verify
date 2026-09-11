@@ -647,14 +647,14 @@
     <script>
         const urlParams = new URLSearchParams(window.location.search);
         const pilgrimId = urlParams.get('id') || '';
-        const paramName = urlParams.get('name') || '';
-        const paramPass = urlParams.get('pass') || '';
-        const paramCamp = urlParams.get('camp') || '';
-        const paramMut = urlParams.get('mut') || '';
-        const paramSaudi = urlParams.get('saudi') || '';
-        const paramAddr = urlParams.get('addr') || '';
-        const paramBus = urlParams.get('bus') || '';
-        const paramRoom = urlParams.get('room') || '';
+        const paramName = urlParams.get('name') || urlParams.get('n') || '';
+        const paramPass = urlParams.get('pass') || urlParams.get('p') || '';
+        const paramCamp = urlParams.get('camp') || urlParams.get('c') || '';
+        const paramMut = urlParams.get('mut') || urlParams.get('m') || '';
+        const paramSaudi = urlParams.get('saudi') || urlParams.get('s') || '';
+        const paramAddr = urlParams.get('addr') || urlParams.get('a') || '';
+        const paramBus = urlParams.get('bus') || urlParams.get('b') || '';
+        const paramRoom = urlParams.get('room') || urlParams.get('r') || '';
 
         let currentData = {
             id: pilgrimId,
